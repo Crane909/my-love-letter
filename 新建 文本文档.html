@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>七夕之礼</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #ff6347; /* 橘红色 */
+        }
+        button {
+            background-color: #4CAF50; /* 绿色 */
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>宝宝，七夕快乐！</h1>
+    <button onclick="showLove()">点击这里接收</button>
+    <p id="message"></p>
+
+    <script>
+        function showLove() {
+            var message = document.getElementById("message");
+            message.innerHTML = "你是我生命中最美好的遇见，永远爱你！";
+            message.style.color = "#ff00cc"; // 淡紫色
+            message.style.fontSize = "24px";
+        }
+    </script>
+</body>
+</html>
